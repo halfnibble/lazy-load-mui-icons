@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "",
     "main": "dist/app_bundle.js",
+    "types": "lib/index.d.ts",
     "scripts": {
         "start": "heft build --watch",
         "build": "heft build --clean",

@@ -132,3 +132,4 @@ dist
 # library build output
 lib
 lib-commonjs
+temp
