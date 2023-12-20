@@ -29,7 +29,9 @@ function createWebpackConfig({ production }) {
         },
         output: {
             path: path.join(__dirname, 'dist'),
-            filename: '[name]_bundle.js',
+            filename: (pathData) => {
+                return pathData.chunk.name === 'app' ? 'index.js' : '[name]_bundle.js';
+            },
             chunkFilename: '[name]_[contenthash].js',
         },
         performance: {

@@ -30,6 +30,22 @@
                         "pluginPackage": "@rushstack/heft-typescript-plugin"
                     }
                 },
+                "perform-copy": {
+                    "taskDependencies": ["typescript"],
+                    "taskPlugin": {
+                        "pluginName": "copy-files-plugin",
+                        "pluginPackage": "@rushstack/heft",
+                        "options": {
+                            "copyOperations": [
+                                {
+                                    "sourcePath": "lib",
+                                    "destinationFolders": ["dist"],
+                                    "fileExtensions": [".d.ts"]
+                                }
+                            ]
+                        }
+                    }
+                },
                 "lint": {
                     "taskDependencies": ["typescript"],
                     "taskPlugin": {
