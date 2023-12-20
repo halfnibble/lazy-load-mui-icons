@@ -1,0 +1,31 @@
+{
+    "name": "lazy-load-mui-icons",
+    "version": "0.1.0",
+    "description": "",
+    "main": "dist/app_bundle.js",
+    "scripts": {
+        "start": "heft build --watch",
+        "build": "heft build --clean",
+        "test": "heft test --clean"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@rushstack/heft": "^0.63.5",
+        "@rushstack/heft-api-extractor-plugin": "^0.2.15",
+        "@rushstack/heft-jest-plugin": "^0.10.7",
+        "@rushstack/heft-lint-plugin": "^0.2.15",
+        "@rushstack/heft-typescript-plugin": "^0.2.15",
+        "@rushstack/heft-webpack5-plugin": "^0.9.15",
+        "@types/heft-jest": "^1.0.6",
+        "@types/react": "^18.2.45",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.15.1",
+        "react": "^18.2.0"
+    }
+}
