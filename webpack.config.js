@@ -33,6 +33,9 @@ function createWebpackConfig({ production }) {
                 return pathData.chunk.name === 'app' ? 'index.js' : '[name]_bundle.js';
             },
             chunkFilename: '[name]_[contenthash].js',
+            library: {
+                type: 'umd',
+            },
         },
         performance: {
             // This specifies the bundle size limit that will trigger Webpack's warning saying:
