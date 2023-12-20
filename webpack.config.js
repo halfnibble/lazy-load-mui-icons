@@ -26,11 +26,14 @@ function createWebpackConfig({ production }) {
         },
         output: {
             path: path.join(__dirname, 'dist'),
+            publicPath: 'auto',
             filename: (pathData) => {
                 return pathData.chunk.name === 'app' ? 'index.js' : '[name]_bundle.js';
             },
             chunkFilename: '[id]_[contenthash].js',
+            globalObject: 'this',
             library: {
+                name: 'LazyLoadMuiIcons',
                 type: 'umd',
             },
         },
