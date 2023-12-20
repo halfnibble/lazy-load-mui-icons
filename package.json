@@ -1,6 +1,6 @@
 {
     "name": "lazy-load-mui-icons",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "main": "dist/app_bundle.js",
     "types": "lib/index.d.ts",
