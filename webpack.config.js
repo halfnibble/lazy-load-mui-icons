@@ -23,16 +23,13 @@ function createWebpackConfig({ production }) {
         },
         entry: {
             app: path.join(__dirname, 'lib', 'index.js'),
-
-            // Put these libraries in a separate vendor bundle
-            vendor: ['react'],
         },
         output: {
             path: path.join(__dirname, 'dist'),
             filename: (pathData) => {
                 return pathData.chunk.name === 'app' ? 'index.js' : '[name]_bundle.js';
             },
-            chunkFilename: '[name]_[contenthash].js',
+            chunkFilename: '[id]_[contenthash].js',
             library: {
                 type: 'umd',
             },
