@@ -21,15 +21,11 @@ function createWebpackConfig({ production }) {
                 },
             ],
         },
-        entry: {
-            app: path.join(__dirname, 'lib', 'index.js'),
-        },
+        entry: path.join(__dirname, 'lib', 'index.js'),
         output: {
             path: path.join(__dirname, 'dist'),
             publicPath: 'https://lazy-mui.s3.us-west-2.amazonaws.com/dist/',
-            filename: (pathData) => {
-                return pathData.chunk.name === 'app' ? 'index.js' : '[name]_bundle.js';
-            },
+            filename: 'index.js',
             chunkFilename: '[id]_[contenthash].js',
             globalObject: 'this',
             library: {
