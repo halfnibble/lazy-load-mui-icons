@@ -24,12 +24,10 @@ function createWebpackConfig({ production }) {
         entry: path.join(__dirname, 'lib', 'index.js'),
         output: {
             path: path.join(__dirname, 'dist'),
-            publicPath: 'https://lazy-mui.s3.us-west-2.amazonaws.com/dist/',
             filename: 'index.js',
             chunkFilename: '[id]_[contenthash].js',
             globalObject: 'this',
             library: {
-                name: 'LazyLoadMuiIcons',
                 type: 'umd',
             },
         },
