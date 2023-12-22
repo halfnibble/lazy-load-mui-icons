@@ -21,7 +21,7 @@ class IconMap {
                     import(
                         /* webpackMode: "lazy" */
                         /* webpackIgnore: true */
-                        `https://lazy-mui.s3.us-west-2.amazonaws.com/@mui/icons-material/${iconName}.js`
+                        `https://lazy-mui.s3.us-west-2.amazonaws.com/@mui/icons-material/esm/${iconName}.js`
                     )
                         .then((Icon) => {
                             this.map.set(iconName, Icon.default);

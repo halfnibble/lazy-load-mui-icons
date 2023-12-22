@@ -28,7 +28,7 @@
         "@emotion/styled": "^11.11.0"
     },
     "peerDependencies": {
-        "@mui/icons-material": "^5.15.1",
+        "@mui/material": "^5.15.1",
         "react": "^18.2.0"
     }
 }
