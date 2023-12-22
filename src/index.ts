@@ -18,7 +18,11 @@ class IconMap {
                 if (existingIcon) {
                     resolve({ default: existingIcon });
                 } else if (iconName) {
-                    import(`@mui/icons-material/${iconName}.js`)
+                    import(
+                        /* webpackMode: "lazy" */
+                        /* webpackIgnore: true */
+                        `https://lazy-mui.s3.us-west-2.amazonaws.com/@mui/icons-material/${iconName}.js`
+                    )
                         .then((Icon) => {
                             this.map.set(iconName, Icon.default);
                             resolve(Icon);
