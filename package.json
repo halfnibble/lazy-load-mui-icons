@@ -2,8 +2,8 @@
     "name": "lazy-load-mui-icons",
     "version": "0.3.1",
     "description": "",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
         "start": "heft build --watch",
         "build": "heft build --clean",
