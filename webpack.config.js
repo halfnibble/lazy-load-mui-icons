@@ -26,7 +26,7 @@ function createWebpackConfig({ production }) {
         },
         output: {
             path: path.join(__dirname, 'dist'),
-            publicPath: 'auto',
+            publicPath: 'https://lazy-mui.s3.us-west-2.amazonaws.com/dist/',
             filename: (pathData) => {
                 return pathData.chunk.name === 'app' ? 'index.js' : '[name]_bundle.js';
             },
