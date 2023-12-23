@@ -20,6 +20,7 @@ class IconMap {
                 } else if (iconName) {
                     import(
                         /* webpackMode: "lazy" */
+                        /* webpackInclude: /\.js$/ */
                         `@mui/icons-material/esm/${iconName}.js`
                     )
                         .then((Icon) => {
