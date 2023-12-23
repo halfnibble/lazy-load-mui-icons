@@ -27,9 +27,8 @@ function createWebpackConfig({ production }) {
             publicPath: 'https://lazy-mui.s3.us-west-2.amazonaws.com/dist/',
             filename: 'index.js',
             chunkFilename: '[id]_[contenthash].js',
-            globalObject: 'this',
             library: {
-                type: 'umd',
+                type: 'amd',
             },
         },
         performance: {
