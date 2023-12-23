@@ -21,6 +21,7 @@ class IconMap {
                     import(
                         /* webpackMode: "lazy" */
                         /* webpackInclude: /\.js$/ */
+                        /* webpackExclude: /index\.js$/ */
                         `@mui/icons-material/esm/${iconName}.js`
                     )
                         .then((Icon) => {
